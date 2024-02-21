@@ -1,1 +1,9 @@
 <h1>TP Entrées et sorties de composants</h1>
+<pre>
+    <app-css-styler
+        [cssStyle]="this.sigStyle()"
+        (cssStylechange)="updateCssStyle($event)"
+        ></app-css-styler>
+    
+    <div class="stylée" [style]="sigStyle()"></div>
+</pre>

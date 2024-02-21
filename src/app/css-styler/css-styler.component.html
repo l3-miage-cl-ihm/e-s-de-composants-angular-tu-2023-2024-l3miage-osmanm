@@ -1,0 +1,17 @@
+<pre>
+backgroundColor: <input    type="color"
+                [ngModel]="cssStyle.backgroundColor"
+                (ngModelChange)="update({backgroundColor: $event})"
+                />
+borderColor: <input type="color"  
+            [ngModel]="cssStyle.borderColor"
+            (ngModelChange)="update({borderColor: $event})"/>
+borderRadius: <input type="number" 
+                [ngModel]="borderRadius"
+                (ngModelChange)="updateRadius($event, borderUnit)"
+                /> 
+<select [ngModel]="borderUnit" (ngModelChange)="updateRadius(borderRadius, $event)">
+<option value="px">px</option>
+<option value="%">%</option>   
+</select>          
+</pre>
